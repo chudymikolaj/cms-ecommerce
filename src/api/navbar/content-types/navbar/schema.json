@@ -56,7 +56,7 @@
       },
       "component": "link.link"
     },
-    "MenuButton": {
+    "MenuButtons": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {
@@ -64,7 +64,7 @@
           "localized": true
         }
       },
-      "component": "link.link"
+      "component": "link.link-with-icon"
     }
   }
 }

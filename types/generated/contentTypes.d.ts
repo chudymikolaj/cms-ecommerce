@@ -895,7 +895,7 @@ export interface ApiNavbarNavbar extends Schema.SingleType {
           localized: true;
         };
       }>;
-    MenuButton: Attribute.Component<'link.link', true> &
+    MenuButtons: Attribute.Component<'link.link-with-icon', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
