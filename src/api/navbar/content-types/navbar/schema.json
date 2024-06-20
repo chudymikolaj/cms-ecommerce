@@ -55,6 +55,16 @@
         }
       },
       "component": "link.link"
+    },
+    "MenuButton": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "link.link"
     }
   }
 }

@@ -895,6 +895,12 @@ export interface ApiNavbarNavbar extends Schema.SingleType {
           localized: true;
         };
       }>;
+    MenuButton: Attribute.Component<'link.link', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
