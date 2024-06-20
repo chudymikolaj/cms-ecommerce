@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_link_link_with_icons",
+  "info": {
+    "displayName": "LinkWithIcon",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
