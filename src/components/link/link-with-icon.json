@@ -2,22 +2,26 @@
   "collectionName": "components_link_link_with_icons",
   "info": {
     "displayName": "LinkWithIcon",
-    "icon": "link"
+    "icon": "link",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "Link": {
-      "type": "string"
+    "Url": {
+      "type": "string",
+      "required": false
     },
     "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
