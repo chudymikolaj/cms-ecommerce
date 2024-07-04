@@ -901,6 +901,12 @@ export interface ApiNavbarNavbar extends Schema.SingleType {
           localized: true;
         };
       }>;
+    UserLinks: Attribute.Component<'user.user-links', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

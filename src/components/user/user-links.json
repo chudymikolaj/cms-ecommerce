@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_user_user_links",
+  "info": {
+    "displayName": "UserLinks",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "UserLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link-with-icon"
+    },
+    "UserLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link-with-icon"
+    }
+  }
+}
