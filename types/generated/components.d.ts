@@ -10,7 +10,7 @@ export interface LinkLinkWithIcon extends Schema.Component {
   attributes: {
     Name: Attribute.String & Attribute.Required;
     Url: Attribute.String;
-    Icon: Attribute.Media<'images'> & Attribute.Required;
+    Icon: Attribute.Media<'images'>;
   };
 }
 
