@@ -1,5 +1,22 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface CartProducts extends Schema.Component {
+  collectionName: 'components_cart_products';
+  info: {
+    displayName: 'Products';
+    icon: 'grid';
+    description: '';
+  };
+  attributes: {
+    IdProduct: Attribute.String & Attribute.Required & Attribute.Unique;
+    Name: Attribute.String & Attribute.Required;
+    Slug: Attribute.String & Attribute.Required;
+    Price: Attribute.Float & Attribute.Required;
+    Quantity: Attribute.Integer & Attribute.Required;
+    Image: Attribute.Media<'images'> & Attribute.Required;
+  };
+}
+
 export interface LinkLinkWithIcon extends Schema.Component {
   collectionName: 'components_link_link_with_icons';
   info: {
@@ -43,6 +60,7 @@ export interface UserUserLinks extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'cart.products': CartProducts;
       'link.link-with-icon': LinkLinkWithIcon;
       'link.link': LinkLink;
       'user.user-links': UserUserLinks;
