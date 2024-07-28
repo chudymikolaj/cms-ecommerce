@@ -8,7 +8,7 @@ export interface CartProducts extends Schema.Component {
     description: '';
   };
   attributes: {
-    IdProduct: Attribute.String & Attribute.Required & Attribute.Unique;
+    IdProduct: Attribute.String & Attribute.Required;
     Name: Attribute.String & Attribute.Required;
     Slug: Attribute.String & Attribute.Required;
     Price: Attribute.Float & Attribute.Required;
@@ -44,6 +44,33 @@ export interface LinkLink extends Schema.Component {
   };
 }
 
+export interface SectionsDescriptionWithImages extends Schema.Component {
+  collectionName: 'components_sections_description_with_images';
+  info: {
+    displayName: 'Description with images';
+  };
+  attributes: {
+    Header: Attribute.String;
+    Text: Attribute.Text;
+    ButtonName: Attribute.String;
+    ButtonUrl: Attribute.String;
+  };
+}
+
+export interface SectionsShowcaseMainpage extends Schema.Component {
+  collectionName: 'components_sections_showcase_mainpages';
+  info: {
+    displayName: 'Showcase - Mainpage';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    Header: Attribute.String;
+    HeaderImage: Attribute.Media<'images'>;
+    DescriptionWithImage: Attribute.Component<'sections.description-with-images'>;
+  };
+}
+
 export interface UserUserLinks extends Schema.Component {
   collectionName: 'components_user_user_links';
   info: {
@@ -63,6 +90,8 @@ declare module '@strapi/types' {
       'cart.products': CartProducts;
       'link.link-with-icon': LinkLinkWithIcon;
       'link.link': LinkLink;
+      'sections.description-with-images': SectionsDescriptionWithImages;
+      'sections.showcase-mainpage': SectionsShowcaseMainpage;
       'user.user-links': UserUserLinks;
     }
   }
