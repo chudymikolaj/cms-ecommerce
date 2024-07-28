@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_description_with_images",
+  "info": {
+    "displayName": "Description with images"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    },
+    "ButtonName": {
+      "type": "string"
+    },
+    "ButtonUrl": {
+      "type": "string"
+    }
+  }
+}
