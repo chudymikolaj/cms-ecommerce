@@ -41,6 +41,17 @@
         }
       },
       "component": "sections.showcase-mainpage"
+    },
+    "Sections": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "sections.section-products"
+      ]
     }
   }
 }

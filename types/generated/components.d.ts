@@ -57,6 +57,25 @@ export interface SectionsDescriptionWithImages extends Schema.Component {
   };
 }
 
+export interface SectionsSectionProducts extends Schema.Component {
+  collectionName: 'components_sections_section_products';
+  info: {
+    displayName: 'Section - Products';
+    icon: 'apps';
+  };
+  attributes: {
+    CountOfProducts: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          max: 24;
+        },
+        number
+      >;
+    HeaderTitle: Attribute.String;
+    CategoryProducts: Attribute.String;
+  };
+}
+
 export interface SectionsShowcaseMainpage extends Schema.Component {
   collectionName: 'components_sections_showcase_mainpages';
   info: {
@@ -91,6 +110,7 @@ declare module '@strapi/types' {
       'link.link-with-icon': LinkLinkWithIcon;
       'link.link': LinkLink;
       'sections.description-with-images': SectionsDescriptionWithImages;
+      'sections.section-products': SectionsSectionProducts;
       'sections.showcase-mainpage': SectionsShowcaseMainpage;
       'user.user-links': UserUserLinks;
     }

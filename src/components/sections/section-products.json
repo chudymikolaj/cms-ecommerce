@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_section_products",
+  "info": {
+    "displayName": "Section - Products",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "CountOfProducts": {
+      "type": "integer",
+      "max": 24
+    },
+    "HeaderTitle": {
+      "type": "string"
+    },
+    "CategoryProducts": {
+      "type": "string"
+    }
+  }
+}

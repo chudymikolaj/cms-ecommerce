@@ -1124,6 +1124,12 @@ export interface ApiPagePage extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    Sections: Attribute.DynamicZone<['sections.section-products']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
