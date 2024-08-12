@@ -11,7 +11,7 @@ export interface CartProducts extends Schema.Component {
     IdProduct: Attribute.String & Attribute.Required;
     Name: Attribute.String & Attribute.Required;
     Slug: Attribute.String & Attribute.Required;
-    Price: Attribute.Float & Attribute.Required;
+    Price: Attribute.Decimal & Attribute.Required;
     Quantity: Attribute.Integer & Attribute.Required;
     Image: Attribute.Media<'images'> & Attribute.Required;
   };
