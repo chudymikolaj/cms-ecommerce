@@ -44,6 +44,23 @@ export interface LinkLink extends Schema.Component {
   };
 }
 
+export interface SectionsBentoSection extends Schema.Component {
+  collectionName: 'components_sections_bento_sections';
+  info: {
+    displayName: 'BentoSection';
+    icon: 'grid';
+  };
+  attributes: {
+    FirstBentoItem: Attribute.Media<'images'>;
+    FirstBentoItemName: Attribute.String;
+    FirstBentoItemButton: Attribute.Component<'link.link'>;
+    SecondBentoItemImage: Attribute.Media<'images'>;
+    SecondBentoItemName: Attribute.String;
+    SecondBentoItemButton: Attribute.Component<'link.link'>;
+    BentoSectionDescription: Attribute.String;
+  };
+}
+
 export interface SectionsDescriptionWithImages extends Schema.Component {
   collectionName: 'components_sections_description_with_images';
   info: {
@@ -109,6 +126,7 @@ declare module '@strapi/types' {
       'cart.products': CartProducts;
       'link.link-with-icon': LinkLinkWithIcon;
       'link.link': LinkLink;
+      'sections.bento-section': SectionsBentoSection;
       'sections.description-with-images': SectionsDescriptionWithImages;
       'sections.section-products': SectionsSectionProducts;
       'sections.showcase-mainpage': SectionsShowcaseMainpage;

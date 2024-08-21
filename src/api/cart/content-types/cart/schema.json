@@ -20,7 +20,7 @@
       "required": true
     },
     "BasketToken": {
-      "type": "string",
+      "type": "text",
       "unique": true
     }
   }

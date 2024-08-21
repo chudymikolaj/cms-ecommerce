@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sections_bento_sections",
+  "info": {
+    "displayName": "BentoSection",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "FirstBentoItem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "FirstBentoItemName": {
+      "type": "string"
+    },
+    "FirstBentoItemButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link"
+    },
+    "SecondBentoItemImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SecondBentoItemName": {
+      "type": "string"
+    },
+    "SecondBentoItemButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link"
+    },
+    "BentoSectionDescription": {
+      "type": "string"
+    }
+  }
+}

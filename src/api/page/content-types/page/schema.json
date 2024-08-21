@@ -50,7 +50,8 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.section-products"
+        "sections.section-products",
+        "sections.bento-section"
       ]
     }
   }

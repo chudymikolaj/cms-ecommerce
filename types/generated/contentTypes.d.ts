@@ -814,7 +814,7 @@ export interface ApiCartCart extends Schema.CollectionType {
   };
   attributes: {
     Products: Attribute.Component<'cart.products', true> & Attribute.Required;
-    BasketToken: Attribute.String & Attribute.Unique;
+    BasketToken: Attribute.Text & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::cart.cart', 'oneToOne', 'admin::user'> &
@@ -1181,7 +1181,9 @@ export interface ApiPagePage extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Sections: Attribute.DynamicZone<['sections.section-products']> &
+    Sections: Attribute.DynamicZone<
+      ['sections.section-products', 'sections.bento-section']
+    > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
