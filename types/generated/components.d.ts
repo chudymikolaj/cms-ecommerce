@@ -49,6 +49,7 @@ export interface SectionsBentoSection extends Schema.Component {
   info: {
     displayName: 'BentoSection';
     icon: 'grid';
+    description: '';
   };
   attributes: {
     FirstBentoItem: Attribute.Media<'images'>;
@@ -58,6 +59,12 @@ export interface SectionsBentoSection extends Schema.Component {
     SecondBentoItemName: Attribute.String;
     SecondBentoItemButton: Attribute.Component<'link.link'>;
     BentoSectionDescription: Attribute.String;
+    SecondBentoItemBackgroundImage: Attribute.Media<'images'>;
+    FirstBentoItemBackgroundColor: Attribute.String &
+      Attribute.DefaultTo<'#FDDD9B'>;
+    FirstBentoItemBackgroundImage: Attribute.Media<'images'>;
+    SecondBentoItemBackgroundColor: Attribute.String &
+      Attribute.DefaultTo<'#FDDD9B'>;
   };
 }
 
