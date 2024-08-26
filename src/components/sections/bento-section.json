@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "FirstBentoItem": {
+    "FirstBentoItemImage": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -43,22 +43,24 @@
       "type": "string"
     },
     "SecondBentoItemBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "FirstBentoItemBackgroundColor": {
       "type": "string",
       "default": "#FDDD9B"
     },
     "FirstBentoItemBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "SecondBentoItemBackgroundColor": {
       "type": "string",

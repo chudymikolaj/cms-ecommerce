@@ -52,7 +52,7 @@ export interface SectionsBentoSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    FirstBentoItem: Attribute.Media<'images'>;
+    FirstBentoItemImage: Attribute.Media<'images'>;
     FirstBentoItemName: Attribute.String;
     FirstBentoItemButton: Attribute.Component<'link.link'>;
     SecondBentoItemImage: Attribute.Media<'images'>;
